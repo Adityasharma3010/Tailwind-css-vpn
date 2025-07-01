@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VPN Site</title>
+    <!-- Tailwind Link -->
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+
+<body class="bg-white font-primary">
+
+    <!-- Header -->
+    <header class="top-[34px] fixed w-full px-4 py-5 bg-white main-header transition-all duration-300 ease-in-out z-50">
+        <nav class="flex gap-4 justify-between items-center max-w-[1140px] container mx-auto">
+            <!-- Logo -->
+            <a href="http://127.0.0.1:5500/src/index.html">
+                <div class="text-xl flex items-center gap-2.5">
+                    <img src="./images/logo.png" alt="Logo" class="h-9">
+                    <span
+                        class="text-primary-header font-medium font-primary leading-primary-header logo-txt transition-all duration-300 ease-in-out">
+                        Lasles<span class="font-bold">VPN</span><span>
+                        </span>
+                </div>
+            </a>
+
+            <!-- Menu -->
+
+            <ul class="hidden lg:flex gap-4 justify-between max-w-[451px] w-full items-center">
+                <li>
+                    <a href="#home"
+                        class="menu-link text-menu-text hover:text-sky-500 transition-colors font-primary leading-primary-header duration-300">About</a>
+                </li>
+                <li>
+                    <a href="#features"
+                        class="menu-link text-menu-text hover:text-sky-500 transition-colors font-primary leading-primary-header duration-300">Features</a>
+                </li>
+                <li>
+                    <a href="#pricing"
+                        class="menu-link text-menu-text hover:text-sky-500 transition-colors font-primary leading-primary-header duration-300">Pricing</a>
+                </li>
+                <li>
+                    <a href="#testimonials"
+                        class="menu-link text-menu-text hover:text-sky-500 transition-colors font-primary leading-primary-header duration-300">Testimonials</a>
+                </li>
+                <li>
+                    <a href="#subscribe"
+                        class="menu-link text-menu-text hover:text-sky-500 transition-colors font-primary leading-primary-header duration-300">Help</a>
+                </li>
+            </ul>
+
+            <div class="w-fit flex gap-2.5">
+                <!-- Hamburger Menu Button -->
+                <div class="flex lg:hidden">
+                    <button
+                        class="text-hamburger-btn focus:outline-none hamburger-btn transition-all duration-300 ease-in-out">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Mobile Menu -->
+                <div
+                    class="mobile-menu lg:hidden hidden absolute top-full left-0 w-full bg-white shadow-md transition-all duration-300 ease-in-out">
+                    <ul class="flex flex-col px-6 py-4 gap-4">
+                        <li><a href="#home" class="text-menu-text hover:text-primary">About</a></li>
+                        <li><a href="#features" class="text-menu-text hover:text-primary">Features</a></li>
+                        <li><a href="#pricing" class="text-menu-text hover:text-primary">Pricing</a></li>
+                        <li><a href="#testimonials" class="text-menu-text hover:text-primary">Testimonials</a></li>
+                        <li><a href="#subscribe" class="text-menu-text hover:text-primary">Help</a></li>
+                    </ul>
+                </div>
+
+                <!-- Buttons -->
+                <div class="flex gap-7 items-center">
+                    <button
+                        class="sign-in hidden sm:flex text-primary-header text-xs sm:text-sm md:text-base font-primary hover:text-[#152033] transition-all duration-300 ease-in-out font-medium leading-primary-header">
+                        Sign In
+                    </button>
+                    <button
+                        class="bg-white leading-primary-header font-bold  text-[10px] sm:text-sm md:text-base font-primary text-primary-btn-text border border-primary-btn-border rounded-full transition-colors duration-300 px-2.5 sm:px-5 py-2.5 md:px-11 md:py-3 hover:bg-primary-btn hover:text-white">
+                        Sign Up
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <section class="w-full px-4 pt-44 pb-[50px]">
+        <div
+            class="max-w-[1207px] mx-auto container flex flex-col md:flex-row gap-9 md:gap-6 justify-between items-center">
+            <div class="md:max-w-[555px] flex w-full flex-col gap-[50px]" data-aos="fade-right">
+                <div class="flex flex-col gap-5">
+                    <h1 class="text-primary-heading text-banner-heading-mobile md:text-banner-heading font-primary">
+                        Want anything to be easy with LaslesVPN.
+                    </h1>
+                    <p class="text-primary-text text-primary-p">
+                        Provide a network for all your needs with ease and fun using <span
+                            class="font-medium">LaslesVPN</span> discover interesting features from us.
+                    </p>
+                </div>
+                <a href="#"
+                    class="bg-secondary-btn text-white text-primary-btns transition-all duration-300 ease-in-out hover:shadow-btn-shadow max-w-[250px] w-full py-4 px-6 text-center rounded-[10px]">
+                    Get Started
+                </a>
+            </div>
+
+            <div class="md:max-w-[611px] w-full block md:flex" data-aos="fade-left">
+                <img src="./images/banner.png" alt="Banner Image" class="w-full">
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="w-full px-4 py-[50px]" data-aos="fade-up">
+        <div
+            class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 sm:gap-y-6 rounded-[10px] px-4 py-8 container bg-white shadow-box-shadow-2 mx-auto max-w-[1140px]">
+
+            <!-- Col 1 -->
+            <div
+                class="flex px-4 py-5 md:py-[30px] flex-col items-center md:border-r-2 border-[#EEEFF2] md:border-b-0 border-b-2">
+                <div class="flex sm:flex-row flex-col gap-4 sm:gap-9 sm:text-left text-center items-center">
+                    <div class="w-[55px] h-[55px] bg-[#FFECEC] rounded-[77px] flex items-center justify-center">
+                        <img src="./images/user.png" alt="User Icon" class="w-[24px] max-w-full h-[24px]">
+                    </div>
+                    <div class="flex flex-col gap-[5px]">
+                        <h3 class="text-primary-h3 text-primary">90+</h3>
+                        <p class="text-primary-text text-custom-p-4">Users</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Col 2 -->
+            <div
+                class="flex px-4 py-5 md:py-[30px] flex-col items-center lg:border-r-2 border-[#EEEFF2] md:border-b-0 border-b-2">
+                <div class="flex sm:flex-row flex-col gap-4 sm:gap-9 sm:text-left text-center items-center">
+                    <div class="w-[55px] h-[55px] bg-[#FFECEC] rounded-[77px] flex items-center justify-center">
+                        <img src="./images/location.png" alt="User Icon" class="w-[24px] max-w-full h-[24px]">
+                    </div>
+                    <div class="flex flex-col gap-[5px]">
+                        <h3 class="text-primary-h3 text-primary">30+</h3>
+                        <p class="text-primary-text text-custom-p-4">Locations</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Col 3 -->
+            <div class="flex px-4 py-5 md:py-[30px] flex-col items-center border-[#EEEFF2] lg:border-r-0 md:border-r-2">
+                <div class="flex sm:flex-row flex-col gap-4 sm:gap-9 sm:text-left text-center items-center">
+                    <div class="w-[55px] h-[55px] bg-[#FFECEC] rounded-[77px] flex items-center justify-center">
+                        <img src="./images/storage.png" alt="User Icon" class="w-[24px] max-w-full h-[24px]">
+                    </div>
+                    <div class="flex flex-col gap-[5px]">
+                        <h3 class="text-primary-h3 text-primary">50+</h3>
+                        <p class="text-primary-text text-custom-p-4">Servers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section class="w-full px-4 py-[50px]">
+        <div class="flex md:flex-row flex-col max-w-[1106px] mx-auto gap-10 justify-between">
+            <div class="block md:flex md:max-w-[508px] w-full" data-aos="fade-left">
+                <img src="./images/features.png" alt="Features Image" class="h-auto w-full">
+            </div>
+
+            <div class="flex flex-col md:max-w-[427px] w-full gap-5 md:self-end" data-aos="fade-right">
+                <h2 class="md:max-w-96 w-full text-primary-h2 font-medium text-primary-heading">
+                    We Provide Many Features You Can Use
+                </h2>
+                <p class="text-primary-p text-primary-text">
+                    You can explore the features that we provide with fun and have their own functions each feature.
+                </p>
+                <ul class="text-primary-p text-primary-text list-none space-y-[15px]">
+                    <li
+                        class="flex flex-row gap-2.5 relative before:relative before:content-[''] before:bg-[url('./images/circle-check-solid.svg')] before:top-0.5 before:left-0 before:bg-no-repeat before:bg-center before:bg-scroll before:bg-cover before:max-w-5 before:h-5 before:w-full before:min-w-5">
+                        Powerfull online protection.
+                    </li>
+                    <li
+                        class="flex flex-row gap-2.5 relative before:relative before:content-[''] before:bg-[url('./images/circle-check-solid.svg')] before:top-0.5 before:left-0 before:bg-no-repeat before:bg-center before:bg-scroll before:bg-cover before:max-w-5 before:h-5 before:w-full before:min-w-5">
+                        Internet without borders.
+                    </li>
+                    <li
+                        class="flex flex-row gap-2.5 relative before:relative before:content-[''] before:bg-[url('./images/circle-check-solid.svg')] before:top-0.5 before:left-0 before:bg-no-repeat before:bg-center before:bg-scroll before:bg-cover before:max-w-5 before:h-5 before:w-full before:min-w-5">
+                        Supercharged VPN
+                    </li>
+                    <li
+                        class="flex flex-row gap-2.5 relative before:relative before:content-[''] before:bg-[url('./images/circle-check-solid.svg')] before:top-0.5 before:left-0 before:bg-no-repeat before:bg-center before:bg-scroll before:bg-cover before:max-w-5 before:h-5 before:w-full before:min-w-5">
+                        No specific time limits.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4 -->
+    <section class="w-full px-4 py-20 bg-gray-100">
+        <div class="flex flex-col mx-auto items-center max-w-[1090px] container gap-[60px]">
+            <div class="flex flex-col gap-5 w-full md:max-w-[555px] items-center">
+                <h2 class="text-primary-h2 text-primary-heading text-center">
+                    Choose Your Plan
+                </h2>
+
+                <p class="text-primary-p text-primary-text text-center">
+                    Let's choose the package that is best for you and explore it happily and cheerfully.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 w-full">
+                <!-- Col 1 -->
+                <div class="group flex flex-col items-center border-2 gap-[30px] border-[#DDDDDD] hover:border-[#F53838] transition-all duration-300 ease-in-out md:px-5 px-4 md:pt-20 pt-[50px] pb-[50px] bg-white rounded-[10px]"
+                    data-aos="fade-up">
+
+                    <div class="flex h-[165px] justify-center items-center">
+                        <img src="./images/box.png" alt="Box" class="max-w-full h-auto">
+                    </div>
+
+                    <div class="flex flex-col justify-between grow md:gap-[50px] gap-8 items-center">
+                        <div class="flex flex-col items-center gap-[30px] w-full">
+                            <h3 class="text-secondary-h3 text-primary-heading text-center">
+                                Free Plan
+                            </h3>
+
+                            <ul class="text-secondary-p text-primary-text list-none space-y-[10px]">
+                                <li
+                                    class="flex flex-row gap-5 relative before:relative before:content-[''] before:bg-[url('./images/ul-tick.svg')] before:top-0.5 before:left-0 before:bg-no-repeat before:bg-center before:bg-scroll before:bg-auto before:max-w-6 before:h-6 before:w-full before:min-w-6">
+                                    Unlimited Bandwitch
+                                </li>
+                                <li
+                                    class="flex flex-row gap-5 relative before:relative before:content-[''] before:bg-[url('./images/ul-tick.svg')] before:top-0.5 before:left-0 before:bg-no-repeat before:bg-center before:bg-scroll before:bg-auto before:max-w-6 before:h-6 before:w-full before:min-w-6">
+                                    Encrypted Connection
+                                </li>
+                                <li
+                                    class="flex flex-row gap-5 relative before:relative before:content-[''] before:bg-[url('./images/ul-tick.svg')] before:top-0.5 before:left-0 before:bg-no-repeat before:bg-center before:bg-scroll before:bg-auto before:max-w-6 before:h-6 before:w-full before:min-w-6">
+                                    No Traffic Logs
+                                </li>
+                                <li
+                                    class="flex flex-row gap-5 relative before:relative before:content-[''] before:bg-[url('./images/ul-tick.svg')] before:top-0.5 before:left-0 before:bg-no-repeat before:bg-center before:bg-scroll before:bg-auto before:max-w-6 before:h-6 before:w-full before:min-w-6">
+                                    Works on All Devices
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="flex flex-col gap-5 items-center w-full">
+                            <span class="text-custom-p-3 text-primary-heading text-center">
+                                Free
+                            </span>
+
+                            <a href="#"
+                                class="lg:max-w-[177px] md:max-w-[80%] w-full text-center z-2 bg-transparent border-2 border-secondary-btn-border rounded-[50px] text-secondary-btns text-secondary-btn relative py-[13px] px-6 group-hover:bg-secondary-btn group-hover:text-white transition-all duration-300 ease-in-out before:content-[''] before:bg-[#F5383859] before:absolute before:bottom-[-17px] before:blur-btn-blur before:w-[71%] before:h-[45px] flex justify-center before:z-0 before:opacity-0 before:transition-opacity before:duration-300 before:ease-in-out before:rounded-[60px] group-hover:before:opacity-100">
+                                Select
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Col 2 -->
+                <div class="group flex flex-col items-center border-2 gap-[30px] border-[#DDDDDD] hover:border-[#F53838] transition-all duration-300 ease-in-out md:px-5 px-4 md:pt-20 pt-[50px] pb-[50px] bg-white rounded-[10px]"
+                    data-aos="fade-up">
+
+                    <div class="flex h-[165px] justify-center items-center">
+                        <img src="./images/box.png" alt="Box" class="max-w-full h-auto">
+                    </div>
+
+                    <div class="flex flex-col justify-between grow md:gap-[50px] gap-8 items-center">
+                        <div class="flex flex-col items-center gap-[30px] w-full">
+                            <h3 class="text-secondary-h3 text-primary-heading text-center">
+                                Standard Plan
+                            </h3>
+
+                            <ul class="text-secondary-p text-primary-text list-none space-y-[10px]">
+                                <li
+                                    class="flex flex-row gap-5 relative before:relative before:content-[''] before:bg-[url('./images/ul-tick.svg')] before:top-0.5 before:left-0 before:bg-no-repeat before:bg-center before:bg-scroll before:bg-auto before:max-w-6 before:h-6 before:w-full before:min-w-6">
+                                    Unlimited Bandwitch
+                                </li>
+                                <li
+                                    class="flex flex-row gap-5 relative before:relative before:content-[''] before:bg-[url('./images/ul-tick.svg')] before:top-0.5 before:left-0 before:bg-no-repeat before:bg-center before:bg-scroll before:bg-auto before:max-w-6 before:h-6 before:w-full before:min-w-6">
+                                    Encrypted Connection
+                                </li>
+                                <li
+                                    class="flex flex-row gap-5 relative before:relative before:content-[''] before:bg-[url('./images/ul-tick.svg')] before:top-0.5 before:left-0 before:bg-no-repeat before:bg-center before:bg-scroll before:bg-auto before:max-w-6 before:h-6 before:w-full before:min-w-6">
+                                    Yes Traffic Logs
+                                </li>
+                                <li
+                                    class="flex flex-row gap-5 relative before:relative before:content-[''] before:bg-[url('./images/ul-tick.svg')] before:top-0.5 before:left-0 before:bg-no-repeat before:bg-center before:bg-scroll before:bg-auto before:max-w-6 before:h-6 before:w-full before:min-w-6">
+                                    Works on All Devices
+                                </li>
+                                <li
+                                    class="flex flex-row gap-5 relative before:relative before:content-[''] before:bg-[url('./images/ul-tick.svg')] before:top-0.5 before:left-0 before:bg-no-repeat before:bg-center before:bg-scroll before:bg-auto before:max-w-6 before:h-6 before:w-full before:min-w-6">
+                                    Connect Anyware
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="flex flex-col gap-5 items-center w-full">
+                            <span class="text-custom-p-3 text-primary-heading text-center">
+                                $9 <span class="text-primary-text font-normal">/ mo</span>
+                            </span>
+
+                            <a href="#"
+                                class="lg:max-w-[177px] md:max-w-[80%] w-full text-center z-2 bg-transparent border-2 border-secondary-btn-border rounded-[50px] text-secondary-btns text-secondary-btn relative py-[13px] px-6 group-hover:bg-secondary-btn group-hover:text-white transition-all duration-300 ease-in-out before:content-[''] before:bg-[#F5383859] before:absolute before:bottom-[-17px] before:blur-btn-blur before:w-[71%] before:h-[45px] flex justify-center before:z-0 before:opacity-0 before:transition-opacity before:duration-300 before:ease-in-out before:rounded-[60px] group-hover:before:opacity-100">
+                                Select
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Col 3 -->
+                <div class="group flex flex-col items-center border-2 gap-[30px] border-[#DDDDDD] hover:border-[#F53838] transition-all duration-300 ease-in-out md:px-5 px-4 md:pt-20 pt-[50px] pb-[50px] bg-white rounded-[10px]"
+                    data-aos="fade-up">
+
+                    <div class="flex h-[165px] justify-center items-center">
+                        <img src="./images/box.png" alt="Box" class="max-w-full h-auto">
+                    </div>
+
+                    <div class="flex flex-col justify-between grow md:gap-[50px] gap-8 items-center">
+                        <div class="flex flex-col items-center gap-[30px] w-full">
+                            <h3 class="text-secondary-h3 text-primary-heading text-center">
+                                Premium Plan
+                            </h3>
+
+                            <ul class="text-secondary-p text-primary-text list-none space-y-[10px]">
+                                <li
+                                    class="flex flex-row gap-5 relative before:relative before:content-[''] before:bg-[url('./images/ul-tick.svg')] before:top-0.5 before:left-0 before:bg-no-repeat before:bg-center before:bg-scroll before:bg-auto before:max-w-6 before:h-6 before:w-full before:min-w-6">
+                                    Unlimited Bandwitch
+                                </li>
+                                <li
+                                    class="flex flex-row gap-5 relative before:relative before:content-[''] before:bg-[url('./images/ul-tick.svg')] before:top-0.5 before:left-0 before:bg-no-repeat before:bg-center before:bg-scroll before:bg-auto before:max-w-6 before:h-6 before:w-full before:min-w-6">
+                                    Encrypted Connection
+                                </li>
+                                <li
+                                    class="flex flex-row gap-5 relative before:relative before:content-[''] before:bg-[url('./images/ul-tick.svg')] before:top-0.5 before:left-0 before:bg-no-repeat before:bg-center before:bg-scroll before:bg-auto before:max-w-6 before:h-6 before:w-full before:min-w-6">
+                                    Yes Traffic Logs
+                                </li>
+                                <li
+                                    class="flex flex-row gap-5 relative before:relative before:content-[''] before:bg-[url('./images/ul-tick.svg')] before:top-0.5 before:left-0 before:bg-no-repeat before:bg-center before:bg-scroll before:bg-auto before:max-w-6 before:h-6 before:w-full before:min-w-6">
+                                    Works on All Devices
+                                </li>
+                                <li
+                                    class="flex flex-row gap-5 relative before:relative before:content-[''] before:bg-[url('./images/ul-tick.svg')] before:top-0.5 before:left-0 before:bg-no-repeat before:bg-center before:bg-scroll before:bg-auto before:max-w-6 before:h-6 before:w-full before:min-w-6">
+                                    Connect Anyware
+                                </li>
+                                <li
+                                    class="flex flex-row gap-5 relative before:relative before:content-[''] before:bg-[url('./images/ul-tick.svg')] before:top-0.5 before:left-0 before:bg-no-repeat before:bg-center before:bg-scroll before:bg-auto before:max-w-6 before:h-6 before:w-full before:min-w-6">
+                                    Get New Features
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="flex flex-col gap-5 items-center w-full">
+                            <span class="text-custom-p-3 text-primary-heading text-center">
+                                $12 <span class="text-primary-text font-normal">/ mo</span>
+                            </span>
+
+                            <a href="#"
+                                class="lg:max-w-[177px] md:max-w-[80%] w-full text-center z-2 bg-transparent border-2 border-secondary-btn-border rounded-[50px] text-secondary-btns text-secondary-btn relative py-[13px] px-6 group-hover:bg-secondary-btn group-hover:text-white transition-all duration-300 ease-in-out before:content-[''] before:bg-[#F5383859] before:absolute before:bottom-[-17px] before:blur-btn-blur before:w-[71%] before:h-[45px] flex justify-center before:z-0 before:opacity-0 before:transition-opacity before:duration-300 before:ease-in-out before:rounded-[60px] group-hover:before:opacity-100">
+                                Select
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5 -->
+    <section class="w-full px-4 py-[60px]">
+        <div class="flex flex-col max-w-[1060px] container mx-auto items-center md:gap-20 gap-10">
+            <div class="flex flex-col items-center md:max-w-[555px] w-full gap-5">
+                <h2 class="md:max-w-[383px] text-center text-primary-h2 text-primary-heading">
+                    Huge Global Network of Fast VPN
+                </h2>
+
+                <p class="text-primary-p text-primary-text text-center">
+                    See <span class="font-medium">LaslesVPN</span> everywhere to make it easier for you when you move
+                    locations.
+                </p>
+            </div>
+
+            <div class="block md:flex flex-col items-center w-full" data-aos="zoom-in">
+                <img src="./images/map.png" alt="Map Image" class="w-full max-w-full h-auto">
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6 -->
+    <section class="w-full px-4 py-[60px]" data-aos="fade-up">
+        <div class="flex flex-wrap max-w-[1120px] mx-auto gap-[30px] justify-center items-center">
+            <div class="flex w-[200px] justify-center items-center">
+                <img src="./images/netflix.png" alt="Netflix">
+            </div>
+            <div class="flex w-[200px] justify-center items-center">
+                <img src="./images/reddit.png" alt="Reddit">
+            </div>
+            <div class="flex w-[200px] justify-center items-center">
+                <img src="./images/amazon.png" alt="Amazon">
+            </div>
+            <div class="flex w-[200px] justify-center items-center">
+                <img src="./images/discord.png" alt="Discord">
+            </div>
+            <div class="flex w-[200px] justify-center items-center">
+                <img src="./images/spotify.png" alt="Spotify">
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 7 -->
+    <section class="w-full px-4 py-[50px]">
+        <div class="flex flex-col mx-auto items-center max-w-[1440px] container gap-[60px]">
+            <div class="flex flex-col gap-5 w-full md:max-w-[555px] items-center">
+                <h2 class="text-primary-h2 text-primary-heading md:max-w-[447px] w-full text-center">
+                    Trusted by Thousands of Happy Customer
+                </h2>
+
+                <p class="text-primary-p text-primary-text text-center">
+                    These are the stories of our customers who have joined us with great pleasure when using this crazy
+                    feature.
+                </p>
+            </div>
+
+            <!-- Testimonials -->
+            <div class="swiper testimonialSwiper w-full" data-aos="zoom-in">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Dynamic Slides -->
+
+                </div>
+
+                <div class="flex items-center mt-12 justify-between">
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination max-w-fit w-full !relative"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="flex sm:!flex lg:!flex xl:!flex gap-4 max-w-fit w-full">
+                        <div
+                            class="group !left-auto !right-auto !m-0 !relative gap-5 swiper-button-prev after:!content-none max-w-[60px] w-full min-w-[60px] max-h-[60px] h-full min-h-[60px] rounded-full border-2 border-[#F53838] bg-white hover:bg-[#F53838] transition-all duration-300 ease-in-out">
+                            <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="!w-5 max-w-full h-auto fill-[#F53838] group-hover:fill-white transition-all duration-300 ease-in-out">
+                                <path
+                                    d="M18.75 8.00291H3.925L8.4625 2.55291C8.67467 2.29764 8.77675 1.96854 8.74628 1.638C8.7158 1.30747 8.55527 1.00258 8.3 0.790408C8.04473 0.578235 7.71563 0.476157 7.3851 0.506632C7.05456 0.537107 6.74967 0.697637 6.5375 0.952908L0.2875 8.45291C0.245451 8.51256 0.207849 8.57523 0.175 8.64041C0.175 8.70291 0.175 8.74041 0.0875002 8.80291C0.0308421 8.94623 0.0011764 9.0988 0 9.25291C0.0011764 9.40702 0.0308421 9.55958 0.0875002 9.70291C0.0875002 9.76541 0.0874998 9.80291 0.175 9.86541C0.207849 9.93058 0.245451 9.99325 0.2875 10.0529L6.5375 17.5529C6.65503 17.694 6.8022 17.8075 6.96856 17.8853C7.13491 17.963 7.31636 18.0032 7.5 18.0029C7.79207 18.0035 8.07511 17.9018 8.3 17.7154C8.42657 17.6105 8.5312 17.4816 8.60789 17.3362C8.68458 17.1907 8.73183 17.0316 8.74692 16.8679C8.76202 16.7042 8.74466 16.5391 8.69586 16.3821C8.64705 16.2251 8.56775 16.0792 8.4625 15.9529L3.925 10.5029H18.75C19.0815 10.5029 19.3995 10.3712 19.6339 10.1368C19.8683 9.90237 20 9.58443 20 9.25291C20 8.92139 19.8683 8.60345 19.6339 8.36902C19.3995 8.1346 19.0815 8.00291 18.75 8.00291Z" />
+                            </svg>
+                        </div>
+
+                        <div
+                            class="group !left-auto !right-auto !m-0 !relative gap-5 swiper-button-next after:!content-none max-w-[60px] w-full min-w-[60px] max-h-[60px] h-full min-h-[60px] rounded-full border-2 border-[#F53838] bg-[#F53838] hover:bg-white transition-all duration-300 ease-in-out">
+                            <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="!w-5 max-w-full h-auto fill-white group-hover:fill-[#F53838] transition-all duration-300 ease-in-out">
+                                <path
+                                    d="M1.25 8.00291H16.075L11.5375 2.55291C11.3253 2.29764 11.2232 1.96854 11.2537 1.638C11.2842 1.30747 11.4447 1.00258 11.7 0.790408C11.9553 0.578235 12.2844 0.476157 12.6149 0.506632C12.9454 0.537107 13.2503 0.697637 13.4625 0.952908L19.7125 8.45291C19.7545 8.51256 19.7922 8.57523 19.825 8.64041C19.825 8.70291 19.825 8.74041 19.9125 8.80291C19.9692 8.94623 19.9988 9.0988 20 9.25291C19.9988 9.40702 19.9692 9.55958 19.9125 9.70291C19.9125 9.76541 19.9125 9.80291 19.825 9.86541C19.7922 9.93058 19.7545 9.99325 19.7125 10.0529L13.4625 17.5529C13.345 17.694 13.1978 17.8075 13.0314 17.8853C12.8651 17.963 12.6836 18.0032 12.5 18.0029C12.2079 18.0035 11.9249 17.9018 11.7 17.7154C11.5734 17.6105 11.4688 17.4816 11.3921 17.3362C11.3154 17.1907 11.2682 17.0316 11.2531 16.8679C11.238 16.7042 11.2553 16.5391 11.3041 16.3821C11.3529 16.2251 11.4322 16.0792 11.5375 15.9529L16.075 10.5029H1.25C0.91848 10.5029 0.600536 10.3712 0.366116 10.1368C0.131695 9.90237 0 9.58443 0 9.25291C0 8.92139 0.131695 8.60345 0.366116 8.36902C0.600536 8.1346 0.91848 8.00291 1.25 8.00291Z" />
+                            </svg>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 8 -->
+    <section class="w-full px-4 pt-8 pb-0 relative" data-aos="flip-up">
+        <div
+            class="flex md:flex-row flex-col items-center gap-7 mb-[-116.5px] justify-between max-w-[1140px] bg-white container mx-auto rounded-[10px] lg:px-[70px] md:px-[35px] px-4 md:py-14 py-9 transition-all duration-300 ease-in-out">
+            <div class="flex flex-col gap-5 max-w-[410px] w-full">
+                <h2 class="text-secondary-h2 text-primary-heading">Subscribe Now for Get Special Features!</h2>
+                <p class="text-primary-p text-primary-text">Let's subscribe with us and find the fun.</p>
+            </div>
+
+            <a href="#"
+                class="w-[250px] text-center z-2 bg-transparent border-2 border-secondary-btn-border rounded-[50px] text-primary-btns text-secondary-btn relative py-[13px] px-6 hover:bg-secondary-btn hover:text-white transition-all duration-300 ease-in-out before:content-[''] before:bg-[#F5383859] before:absolute before:bottom-[-17px] before:blur-btn-blur before:w-[71%] before:h-[45px] flex justify-center before:z-0 before:opacity-0 before:transition-opacity before:duration-300 before:ease-in-out before:rounded-[60px] hover:before:opacity-100">
+                Subscribe Now
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="flex flex-col px-4 pt-44 pb-24 bg-footer-bg">
+        <div
+            class="container w-full max-w-[1140px]  mx-auto justify-between grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[repeat(4,auto)] gap-6 lg:gap-7">
+            <!-- col-1 -->
+            <div class="flex flex-col gap-[30px] items-start lg:w-fit">
+                <div class="flex flex-col gap-5 items-start">
+                    <a href="http://127.0.0.1:5500/src/index.html">
+                        <div class="text-2xl flex items-center gap-2.5">
+                            <img src="./images/logo.png" alt="Logo" class="h-9">
+                            <span
+                                class="text-primary font-medium font-primary text-xl leading-primary-header">Lasles<span
+                                    class="font-bold">VPN</span><span>
+                        </div>
+                    </a>
+                    <div class="text-secondary-div text-secondary font-primary max-w-[340px] w-full">
+                        <span class="font-medium">LaslesVPN</span> is a private virtual network that has unique features
+                        and has high security.
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap gap-5">
+                    <a href="#" class="rounded-full shadow-footer-icons group">
+                        <div class="w-full max-w-[33.6px] h-[33.6px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="35" viewBox="0 0 34 35"
+                                fill="none">
+                                <circle cx="16.8001" cy="17.3805" r="16.7999" fill="#F53838"
+                                    class="group-hover:fill-white transition-all duration-300 ease-in-out" />
+                                <path
+                                    d="M16.8 0.580566C7.5215 0.580566 0 8.10207 0 17.3806C0 26.6591 7.5215 34.1806 16.8 34.1806C26.0785 34.1806 33.6 26.6591 33.6 17.3806C33.6 8.10207 26.0785 0.580566 16.8 0.580566ZM20.7795 12.1901H18.2543C17.955 12.1901 17.6225 12.5838 17.6225 13.1071V14.9306H20.7813L20.3035 17.5311H17.6225V25.3378H14.6423V17.5311H11.9385V14.9306H14.6423V13.4011C14.6423 11.2066 16.1648 9.42332 18.2543 9.42332H20.7795V12.1901Z"
+                                    fill="white"
+                                    class="group-hover:fill-footer-icons-bg transition-all duration-300 ease-in-out" />
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="#" class="rounded-full shadow-footer-icons group">
+                        <div class="w-full max-w-[33.6px] h-[33.6px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35"
+                                fill="none">
+                                <circle cx="17.4" cy="17.3805" r="16.7999" fill="#F53838"
+                                    class="group-hover:fill-white transition-all duration-300 ease-in-out" />
+                                <path
+                                    d="M17.4 0.580566C8.12148 0.580566 0.599976 8.10207 0.599976 17.3806C0.599976 26.6591 8.12148 34.1806 17.4 34.1806C26.6785 34.1806 34.2 26.6591 34.2 17.3806C34.2 8.10207 26.6785 0.580566 17.4 0.580566ZM24.2337 14.3426C24.2407 14.4861 24.2425 14.6296 24.2425 14.7696C24.2425 19.1446 20.9157 24.1863 14.8292 24.1863C13.0307 24.1893 11.2697 23.6728 9.75773 22.6988C10.015 22.7303 10.2792 22.7426 10.547 22.7426C12.0975 22.7426 13.5237 22.2158 14.656 21.3268C13.966 21.3133 13.2974 21.0848 12.7434 20.6732C12.1894 20.2617 11.7777 19.6875 11.5655 19.0308C12.061 19.125 12.5715 19.1053 13.0582 18.9731C12.3093 18.8216 11.6358 18.4158 11.152 17.8245C10.6681 17.2331 10.4037 16.4926 10.4035 15.7286V15.6883C10.8497 15.9351 11.3607 16.0856 11.9032 16.1031C11.2011 15.6357 10.7041 14.9177 10.5138 14.0961C10.3235 13.2744 10.4543 12.411 10.8795 11.6826C11.7106 12.7046 12.7472 13.5406 13.922 14.1366C15.0968 14.7326 16.3836 15.0752 17.6992 15.1423C17.532 14.4324 17.604 13.687 17.904 13.0222C18.204 12.3574 18.7153 11.8103 19.3584 11.466C20.0014 11.1218 20.7402 10.9996 21.4598 11.1185C22.1794 11.2374 22.8396 11.5907 23.3377 12.1236C24.0783 11.9771 24.7884 11.7054 25.4377 11.3203C25.1909 12.0871 24.6742 12.7381 23.9835 13.1526C24.6395 13.0736 25.28 12.8972 25.884 12.6293C25.4403 13.2941 24.8815 13.8743 24.2337 14.3426V14.3426Z"
+                                    fill="white"
+                                    class="group-hover:fill-footer-icons-bg transition-all duration-300 ease-in-out" />
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="#" class="rounded-full shadow-footer-icons group">
+                        <div class="w-full max-w-[33.6px] h-[33.6px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="35" viewBox="0 0 34 35"
+                                fill="none">
+                                <circle cx="17" cy="17.3805" r="16.7999" fill="#F53838"
+                                    class="group-hover:fill-white transition-all duration-300 ease-in-out" />
+                                <path
+                                    d="M22.25 17.3806C22.25 18.773 21.6968 20.1083 20.7123 21.0929C19.7277 22.0774 18.3923 22.6306 17 22.6306C15.6076 22.6306 14.2722 22.0774 13.2876 21.0929C12.3031 20.1083 11.75 18.773 11.75 17.3806C11.75 17.0813 11.7815 16.7891 11.8357 16.5056H9.99995V23.5003C9.99995 23.9868 10.3937 24.3806 10.8802 24.3806H23.1215C23.3546 24.3801 23.5781 24.2872 23.7428 24.1221C23.9075 23.9571 24 23.7335 24 23.5003V16.5056H22.1642C22.2185 16.7891 22.25 17.0813 22.25 17.3806V17.3806ZM17 20.8806C17.4597 20.8805 17.9149 20.7898 18.3396 20.6137C18.7643 20.4377 19.1502 20.1797 19.4752 19.8546C19.8002 19.5294 20.058 19.1434 20.2338 18.7186C20.4096 18.2938 20.5001 17.8386 20.5 17.3788C20.4998 16.9191 20.4092 16.4639 20.2331 16.0392C20.0571 15.6145 19.7991 15.2286 19.474 14.9036C19.1488 14.5786 18.7628 14.3208 18.338 14.145C17.9132 13.9691 17.4579 13.8787 16.9982 13.8788C16.0697 13.8791 15.1793 14.2481 14.523 14.9048C13.8666 15.5615 13.498 16.4521 13.4982 17.3806C13.4984 18.3091 13.8675 19.1994 14.5242 19.8558C15.1809 20.5122 16.0715 20.8808 17 20.8806V20.8806ZM21.2 13.7056H23.2982C23.4376 13.7056 23.5713 13.6503 23.6701 13.5519C23.7688 13.4535 23.8245 13.32 23.825 13.1806V11.0823C23.825 10.9426 23.7695 10.8086 23.6707 10.7098C23.5719 10.6111 23.4379 10.5556 23.2982 10.5556H21.2C21.0603 10.5556 20.9263 10.6111 20.8275 10.7098C20.7287 10.8086 20.6732 10.9426 20.6732 11.0823V13.1806C20.675 13.4693 20.9112 13.7056 21.2 13.7056V13.7056ZM17 0.580566C12.5443 0.580566 8.27117 2.35056 5.12056 5.50117C1.96995 8.65178 0.199951 12.9249 0.199951 17.3806C0.199951 21.8362 1.96995 26.1094 5.12056 29.26C8.27117 32.4106 12.5443 34.1806 17 34.1806C19.2062 34.1806 21.3908 33.746 23.429 32.9017C25.4673 32.0575 27.3193 30.82 28.8793 29.26C30.4394 27.6999 31.6769 25.8479 32.5211 23.8097C33.3654 21.7714 33.8 19.5868 33.8 17.3806C33.8 15.1744 33.3654 12.9898 32.5211 10.9515C31.6769 8.91322 30.4394 7.0612 28.8793 5.50117C27.3193 3.94115 25.4673 2.70367 23.429 1.85939C21.3908 1.01511 19.2062 0.580566 17 0.580566V0.580566ZM25.75 24.1863C25.75 25.2556 24.875 26.1306 23.8057 26.1306H10.1942C9.12495 26.1306 8.24995 25.2556 8.24995 24.1863V10.5748C8.24995 9.50557 9.12495 8.63057 10.1942 8.63057H23.8057C24.875 8.63057 25.75 9.50557 25.75 10.5748V24.1863V24.1863Z"
+                                    fill="white"
+                                    class="group-hover:fill-footer-icons-bg transition-all duration-300 ease-in-out" />
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+
+                <p class="text-secondary-div text-copyright-p">
+                    &copy;<span id="year"></span>Lasles<span class="font-medium">VPN</span>
+                </p>
+
+            </div>
+
+            <!-- col-2 -->
+            <div
+                class="flex flex-col gap-5 items-start text-left md:text-right lg:text-left md:items-end lg:items-start lg:w-fit">
+                <div class="text-primary text-primary-div">Product</div>
+
+                <ul class="flex flex-col gap-2.5 font-primary text-secondary-div text-secondary">
+                    <li>
+                        <a href="http://127.0.0.1:5500/src/index.html"
+                            class="hover:text-[#393e49] transition-colors duration-300 ease-in-out">Download</a>
+                    </li>
+                    <li>
+                        <a href="http://127.0.0.1:5500/src/index.html"
+                            class="hover:text-[#393e49] transition-colors duration-300 ease-in-out">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="http://127.0.0.1:5500/src/index.html"
+                            class="hover:text-[#393e49] transition-colors duration-300 ease-in-out">Locations</a>
+                    </li>
+                    <li>
+                        <a href="http://127.0.0.1:5500/src/index.html"
+                            class="hover:text-[#393e49] transition-colors duration-300 ease-in-out">Server</a>
+                    </li>
+                    <li>
+                        <a href="http://127.0.0.1:5500/src/index.html"
+                            class="hover:text-[#393e49] transition-colors duration-300 ease-in-out">Countries</a>
+                    </li>
+                    <li>
+                        <a href="http://127.0.0.1:5500/src/index.html"
+                            class="hover:text-[#393e49] transition-colors duration-300 ease-in-out">Blog</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- col-3 -->
+            <div class="flex flex-col gap-5 items-start lg:w-fit">
+                <div class="text-primary text-primary-div">Engage</div>
+
+                <ul class="flex flex-col gap-2.5 font-primary text-secondary-div text-secondary">
+                    <li>
+                        <a href="http://127.0.0.1:5500/src/index.html"
+                            class="hover:text-[#393e49] transition-colors duration-300 ease-in-out">LaslesVPN
+                            ?</a>
+                    </li>
+                    <li>
+                        <a href="http://127.0.0.1:5500/src/index.html"
+                            class="hover:text-[#393e49] transition-colors duration-300 ease-in-out">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="http://127.0.0.1:5500/src/index.html"
+                            class="hover:text-[#393e49] transition-colors duration-300 ease-in-out">Tutorials</a>
+                    </li>
+                    <li>
+                        <a href="http://127.0.0.1:5500/src/index.html"
+                            class="hover:text-[#393e49] transition-colors duration-300 ease-in-out">About Us</a>
+                    </li>
+                    <li>
+                        <a href="http://127.0.0.1:5500/src/index.html"
+                            class="hover:text-[#393e49] transition-colors duration-300 ease-in-out">Privacy
+                            Policy</a>
+                    </li>
+                    <li>
+                        <a href="http://127.0.0.1:5500/src/index.html"
+                            class="hover:text-[#393e49] transition-colors duration-300 ease-in-out">Terms of
+                            Service</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- col-4 -->
+            <div
+                class="flex flex-col gap-5 items-start text-left md:text-right lg:text-left md:items-end lg:items-start lg:w-fit">
+                <div class="text-primary text-primary-div">Earn Money</div>
+
+                <ul class="flex flex-col gap-2.5 font-primary text-secondary-div text-secondary">
+                    <li>
+                        <a href="http://127.0.0.1:5500/src/index.html"
+                            class="hover:text-[#393e49] transition-colors duration-300 ease-in-out">Affiliate</a>
+                    </li>
+                    <li>
+                        <a href="http://127.0.0.1:5500/src/index.html"
+                            class="hover:text-[#393e49] transition-colors duration-300 ease-in-out">Become Partner</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+
+</body>
+
+</html>
