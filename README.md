@@ -105,10 +105,11 @@ Frontend Developer & Designer
 
 🔗 [Portfolio](#)  
 🌐 [Live Demo](https://tailwind-css-vpn.vercel.app/)  
-📧 adityasharma@example.com *(replace with yours)*  
+📧 nakul.adi@gmail.com
 
 ---
 
 ## 📄 License
 
 This project is open-source and available under the **MIT License**.
+
