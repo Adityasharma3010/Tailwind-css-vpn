@@ -88,3 +88,7 @@
 .swiper-slide > div {
   transition: all 0.3s ease-in-out !important;
 }
+
+html {
+  scroll-behavior: smooth;
+}
